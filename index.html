@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Sorts</h1>
+    </header>
+    <main>
+        <article>
+           <!-- Array Input Form -->
+            <section>
+                <div>
+                    <!-- <p>Please enter an array of numbers:</p> -->
+                    <form action="" id="enter-numbers">
+                        <label for="number">Please enter an array of numbers:</label>
+                        <input type="number" name="number" id="number" placeholder="enter numbers ..."> 
+                    </form>
+                </div>
+
+                <div>
+                    <button type="submit" id="add">Add</button>
+                    <button type="submit" id="show">Show</button>
+                </div>
+                <p id="display"></p>
+            </section>
+
+            <!-- Generate Random Array -->
+            <section>
+                <div>
+                    <!-- <p>Generate a random array:</p> -->
+                    <form action="" id="validate-random">
+                        <label for="gen">Generate a random array:</label>
+                        <input type="number" name="gen" id="gen" placeholder="enter array size ...">
+                    </form>
+                    <div>
+                        <button type="submit" id="validate">Validate</button>
+                        <button type="submit" id="generate">Generate</button>
+                    </div>
+                    <div>
+                        <p id="validated"></p>
+                    </div>
+                </div>
+                <p id="random"></p>
+            </section>
+
+            <!-- Reset Button -->
+            <section>
+                <div>
+                    <button id="reset">Reset</button>
+                </div>
+            </section>
+
+            <!-- Search Number Form -->
+            <section>
+                <div>
+                    <form action="" id="search-number">
+                        <label for="num">Enter a number:</label>
+                        <input type="number" id="num" placeholder="search ...">
+                    </form>
+                </div>
+            
+                <div>
+                    <button type="submit" id="numbr">Show</button>
+                </div>
+                <p id="showArr"></p>
+            
+                <div class="input-group">
+                    <label for="search">Searches</label>
+                    <form id="selectForm">
+                        <select name="selectList" class="temp" id="search" autocomplete="off">
+                            <option value="" selected default>[Select one]</option>
+                            <option value="linear">Linear Search</option>
+                            <option value="smallest">Smallest element</option>
+                            <option value="highest">Highest element</option>
+                        </select>
+                        <!-- <input type="submit" class="temp" value="Select" id="submit-select"> -->
+                        <button type="submit" id="submit-select" class="temp">Select</button>
+                        <!-- <input type="reset" value="Reset" /> -->
+                    </form>
+                </div>
+                <p id="selectResult"></p>
+            </section>
+
+            <!-- Sorting Methods -->
+            <section>
+                <div class="input-group">
+                    <label for="sort">Sorting Methods</label>
+                    <form id="sortForm">
+                        <select name="sortList" class="temp" id="sort" autocomplete="off">
+                            <option value="" selected default>[Select one]</option>
+                            <option value="selection">Selection Sort</option>
+                            <option value="bubble">Bubble Sort</option>
+                        </select>
+                        <!-- <input type="submit" class="temp" value="Sort" id="submit-sort"> -->
+                        <button type="submit" id="submit-sort" class="temp">Sort</button>
+                    </form>
+                </div>
+            
+                <!-- <div>
+                    <button type="submit" id="search">Search</button>
+                </div> -->
+                <p id="sortResult"></p>
+            </section>
+        </article>
+    </main>
+    <!-- <footer>Footer</footer> -->
+    <script src="script.js"></script>
+</body>
+</html>
