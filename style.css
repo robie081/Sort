@@ -150,6 +150,10 @@ select:focus {
     border-bottom: 2px solid #4CAF50;
 }
 
+input:active {
+    font-size: 1em !important;
+}
+
 option {
     background-color: white;
     padding: 1em;
