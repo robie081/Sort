@@ -4,113 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sort</title>
-    <link rel="stylesheet" href="reset.css">
+    <title>Hamburger</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>My Sorts</h1>
-    </header>
-    <main>
-        <article>
-           <!-- Array Input Form -->
-            <section>
-                <div>
-                    <!-- <p>Please enter an array of numbers:</p> -->
-                    <form action="" id="enter-numbers">
-                        <label for="number">Please enter an array of numbers:</label>
-                        <input type="number" name="number" id="number" placeholder="enter numbers ..."> 
-                    </form>
-                </div>
 
-                <div>
-                    <button type="submit" id="add">Add</button>
-                    <button type="submit" id="show">Show</button>
-                </div>
-                <p id="display"></p>
-            </section>
+    <!-- theWhippet Like Hamburger with SVG-->
 
-            <!-- Generate Random Array -->
-            <section>
-                <div>
-                    <!-- <p>Generate a random array:</p> -->
-                    <form action="" id="validate-random">
-                        <label for="gen">Generate a random array:</label>
-                        <input type="number" name="gen" id="gen" placeholder="enter array size ...">
-                    </form>
-                    <div>
-                        <button type="submit" id="validate">Validate</button>
-                        <button type="submit" id="generate">Generate</button>
-                    </div>
-                    <div>
-                        <p id="validated"></p>
-                    </div>
-                </div>
-                <p id="random"></p>
-            </section>
+    <!-- <div class="menu-button" tabindex="1">
+        <div class="menu-icon">
+              <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 30 30">
+                <path d="M4 6h44M4 15h44M4 24h44" stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg> 
+              <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 30">
+                <g transform="scale(0.8) translate(4, 4)">
+                    <path d="M4 4l22 22M4 26l22-22" stroke="#000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </svg>
+        </div>
+    </div>  -->
 
-            <!-- Reset Button -->
-            <section>
-                <div>
-                    <button id="reset">Reset</button>
-                </div>
-            </section>
+    <!-- Second -->
 
-            <!-- Search Number Form -->
-            <section>
-                <div>
-                    <form action="" id="search-number">
-                        <label for="num">Enter a number:</label>
-                        <input type="number" id="num" placeholder="search ...">
-                    </form>
-                </div>
-            
-                <div>
-                    <button type="submit" id="numbr">Show</button>
-                </div>
-                <p id="showArr"></p>
-            
-                <div class="input-group">
-                    <label for="search">Searches</label>
-                    <form id="selectForm">
-                        <select name="selectList" class="temp" id="search" autocomplete="off">
-                            <option value="" selected default>[Select one]</option>
-                            <option value="linear">Linear Search</option>
-                            <option value="smallest">Smallest element</option>
-                            <option value="highest">Highest element</option>
-                        </select>
-                        <!-- <input type="submit" class="temp" value="Select" id="submit-select"> -->
-                        <button type="submit" id="submit-select" class="temp">Search</button>
-                        <!-- <input type="reset" value="Reset" /> -->
-                    </form>
-                </div>
-                <p id="selectResult"></p>
-            </section>
+    <nav>
+      <div class="menu-icon">
+        <div class="hamburger">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 30 30">
+            <path d="M4 6h44M4 15h44M4 24h44" stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg> 
+        </div>
+        <div class="cross">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 30">
+            <g transform="scale(0.8) translate(4, 4)">
+                <path d="M4 4l22 22M4 26l22-22" stroke="#000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </svg>
+        </div>      
+  </div>  
+    </nav>
 
-            <!-- Sorting Methods -->
-            <section>
-                <div class="input-group">
-                    <label for="sort">Sorting Methods</label>
-                    <form id="sortForm">
-                        <select name="sortList" class="temp" id="sort" autocomplete="off">
-                            <option value="" selected default>[Select one]</option>
-                            <option value="selection">Selection Sort</option>
-                            <option value="bubble">Bubble Sort</option>
-                        </select>
-                        <!-- <input type="submit" class="temp" value="Sort" id="submit-sort"> -->
-                        <button type="submit" id="submit-sort" class="temp">Sort</button>
-                    </form>
-                </div>
-            
-                <!-- <div>
-                    <button type="submit" id="search">Search</button>
-                </div> -->
-                <p id="sortResult"></p>
-            </section>
-        </article>
-    </main>
-    <!-- <footer>Footer</footer> -->
     <script src="script.js"></script>
 </body>
 </html>
