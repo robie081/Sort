@@ -1,32 +1,276 @@
 
-/* theWhippet Like Hamburger with SVG */
+/* Casa Lupu */
 
-/* .menu-icon {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    /* width: auto; */
+    /* width: 100%; */
+    /* min-width: 100vw; */
+    overflow-x: hidden;
+  }
+  
+  nav {
+    /* border: 2px solid plum; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    padding: 0 2rem;
+    /* background-color: #ccc; */
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    /* border-bottom: 1px solid #9ca3af; */
+    overflow: hidden;
+  
+    /* box-shadow: 0 0 5px 0 lightgray; */
+  }
+  
+  .nav-links {
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    top: 0;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    width: 70%;
+  
+    transform: translateX(100%);
+    padding-top: 6rem;
+  }
+  
+  .nav-links li {
+    /* border: 2px solid lightblue; */
+    /* flex: 1; */
+    list-style: none;
+    /* display: flex; */
+    /* align-items: center; */
+    width: 78%;
+  
+    margin: 0.3rem 2.4rem;
+    padding-bottom: 0.875rem;
+    border-bottom: 1px solid #3f3f46;
+  }
+  
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+  
+  /* .nav-links li {
+    opacity: 0;
+  } */
+  
+  /* @keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+  } */
+  
+  .nav-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  
+  .active a {
+    color: whitesmoke;
+  }
+  
+  a:hover {
+    color: whitesmoke;
+    transition: all 0.5s ease;
+  }
+  
+  .nav-active {
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+    background-color: black;
+    z-index: -1;
+  }
+  
+  
+  /* Casa Lupu Hamburger */
+  
+  .hamburger {
+    /* border: 1px solid plum; */
+    width: 20px;
+    height: 12px;
+    background-image: url(/menus/casaLupu/assets/hamburger.png);
     cursor: pointer;
-    padding: 1rem;
-}
-
-.cross {
-    display: none;
-}
-
-.hidden {
-    display: none;
-} */
-
-
-/* Second */
-
-.menu-icon {
+    background-size: 20px 12px !important;
+  }
+  
+  .cross {
+    /* border: 1px solid plum; */
+    width: 14px;
+    height: 15px;
+    background-image: url(/menus/casaLupu/assets/cross.png);
     cursor: pointer;
-    display: inline-block;
+    background-size: 14px 15px !important;
+  
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in;
+  }
+  
+  /* .cross:hover {
+    opacity: 0.7;
+  } */
+  
+  .cross.visible:hover {
+    opacity: 0.7;
+  }
+  
+  /* .changeBlock {
+    display: block;
+  } */
+  
+  .cross.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .changeNone {
+    display: none;
+  }
+  
+  /* TEROX Travel Hamburger */
+  
+  /* .hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
     margin: 1rem;
-}
-
-.cross {
-    display: none;
-}
-
-.hidden {
-    display: none;
-}
+  }
+  
+  .one, .two {
+    height: 1px;
+    background-color: black;
+    margin: 7px auto;
+    border-radius: 3px;
+    transition: all 1s;
+  }
+  
+  .change .one {
+    animation: slideInOne 0.5s ease-in-out 0.5s forwards, rotateLineOne 0.5s ease-in-out 1s forwards;
+  }
+  
+  .change .two {
+    animation: slideInTwo 0.5s ease-in-out 0.5s forwards, rotateLineTwo 0.5s ease-in-out 1s forwards;
+  }
+  
+  @keyframes slideInOne {
+    from { translate: 0px 0px; }
+    to { translate: 0px 4px; }
+  }
+  
+  @keyframes rotateLineOne {
+    from { rotate: 0deg; }
+    to { rotate: 45deg; }
+  }
+  
+  @keyframes slideInTwo {
+    from { translate: 0px 0px; }
+    to { translate: 0px -4px; }   
+  }
+  
+  @keyframes rotateLineTwo {
+    from { rotate: 0deg; }
+    to { rotate: -45deg; }
+  } */
+  
+  main div {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  
+  /* @media screen and (orientation: landscape)  */
+  @media screen and (min-width: 640px) {
+    
+    .nav-links li {
+        margin: 0.875rem;
+    }
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+  
+    .hamburger, .cross {
+        display: none;
+    }
+  
+    /* First */
+  
+    /* .nav-links {
+        height: 10vh;
+        transform: translateX(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: row;
+        justify-content: center;
+    } */
+  
+    /* Second */
+  
+    /* .nav-links {
+        height: 10vh;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 50%;
+        transform: translateX(100%);
+    } */
+  
+    /* Third */
+  
+    /* .nav-links {
+        height: 10vh;
+        flex-direction: row;
+        justify-content: center;
+        position: static;
+        transform: translateX(0%);
+        transition: none;
+    } */
+  
+    /* Fourth and final */
+  
+    .nav-links {
+        height: 10vh;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        transform: translateX(0%);
+        transition: none;
+    } 
+  
+    .nav-links li {
+        /* border: 2px solid lightblue; */
+        opacity: 1;
+        margin: 1rem;
+    }
+  
+  }
